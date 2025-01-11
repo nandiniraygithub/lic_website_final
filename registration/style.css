@@ -1,0 +1,138 @@
+/* Reset body styles and apply font */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(135deg, #f9d71c, #3b82f6);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+    overflow: hidden;
+    animation: gradientAnimation 5s infinite alternate;
+}
+
+/* Container for the form */
+.contact-form-container {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for the form container */
+.contact-form-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Form heading */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f9d71c;
+    font-weight: 700;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Adding an underline effect to the heading */
+h2::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #3b82f6;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: underlineAnimation 1s ease-in-out;
+}
+
+/* Label styling */
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Input and textarea fields */
+form input, form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+/* Focus effect on input and textarea */
+form input:focus, form textarea:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
+}
+
+/* Button styling */
+form button {
+    width: 100%;
+    padding: 12px 15px;
+    background: linear-gradient(135deg, #3b82f6, #f9d71c);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Button hover effect */
+form button:hover {
+    background: linear-gradient(135deg, #f9d71c, #3b82f6);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Status message */
+#status-message {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+
+#status-message.success {
+    color: #3b82f6;
+}
+
+#status-message.error {
+    color: #dc3545;
+}
+
+/* Keyframe animations */
+@keyframes gradientAnimation {
+    0% {
+        background: linear-gradient(135deg, #f9d71c, #3b82f6);
+    }
+    100% {
+        background: linear-gradient(135deg, #3b82f6, #f9d71c);
+    }
+}
+
+@keyframes underlineAnimation {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}

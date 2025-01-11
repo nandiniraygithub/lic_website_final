@@ -1,0 +1,114 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    animation: fadeIn 1.5s ease-out;
+}
+
+header {
+    background-color: #0073e6;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    opacity: 0;
+    animation: fadeInHeader 2s forwards;
+}
+
+h1 {
+    margin: 0;
+}
+
+section {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeInSection 2s forwards;
+}
+
+.feature-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.feature-list li {
+    margin: 10px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.feature-list li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #0073e6;
+}
+
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+    margin-bottom: 1rem;
+}
+
+.register-btn {
+    display: inline-block;
+    background-color: #0073e6;
+    color: #ebef0b;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: #ebef0bd6;
+    transform: scale(1.1);
+    color: #0073e6;
+
+}
+
+.register-btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInHeader {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInSection {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
