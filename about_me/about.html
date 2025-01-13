@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Landing Page</title>
+    <style>
+        :root {
+            --primary-blue: #1e40af;
+            --secondary-blue: #1d4ed8;
+            --light-blue: #60a5fa;
+            --dark-blue: #1e3a8a;
+            --primary-yellow: #fbbf24;
+            --light-yellow: #fcd34d;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: var(--primary-blue);
+            color: white;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 100%;
+            padding: 1rem;
+        }
+
+        section {
+            padding: 2rem 1rem;
+        }
+
+        /* Header & Hero Styles (unchanged) */
+        .header {
+            background: var(--dark-blue);
+            padding: 1rem;
+            text-align: center;
+            border-bottom: 3px solid var(--primary-yellow);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--secondary-blue), var(--dark-blue));
+            text-align: center;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 1.5rem;
+            border: 3px solid var(--primary-yellow);
+            display: block;
+        }
+
+        /* Section Styles */
+        .section-title {
+            color: var(--primary-yellow);
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .section-subtitle {
+            color: var(--light-yellow);
+            font-size: 1.4rem;
+            margin: 2rem 0 1rem;
+        }
+
+        /* Card Styles */
+        .cards-container {
+            display: grid;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h3 {
+            color: var(--dark-blue);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .card p, .card li {
+            color: #4a5568;
+            margin-bottom: 0.5rem;
+        }
+
+        .card ul {
+            list-style-position: inside;
+            margin: 1rem 0;
+        }
+
+        /* Alternating Sections */
+        .white-section {
+            background: white;
+        }
+
+        .white-section .section-title {
+            color: var(--dark-blue);
+        }
+
+        .blue-section {
+            background: var(--light-blue);
+        }
+
+        .blue-section .section-title,
+        .blue-section p {
+            color: var(--dark-blue);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(45deg, var(--dark-blue), var(--secondary-blue));
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        .cta-section p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        /* Button Styles */
+        .button-container {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin: 1.5rem 0;
+        }
+
+        .btn {
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: transform 0.3s ease;
+        }
+
+        .btn:active {
+            transform: scale(0.95);
+        }
+
+        .btn-primary {
+            background-color: var(--primary-yellow);
+            color: var(--dark-blue);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            border: 2px solid var(--primary-yellow);
+            color: var(--primary-yellow);
+        }
+
+        /* Benefits List */
+        .benefits-list {
+            list-style: none;
+            margin: 2rem 0;
+        }
+
+        .benefits-list li {
+            background: white;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            border-radius: 10px;
+            color: var(--dark-blue);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                max-width: 768px;
+                margin: 0 auto;
+            }
+
+            .cards-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .profile-image {
+                width: 200px;
+                height: 200px;
+            }
+
+            .btn {
+                font-size: 1rem;
+                padding: 1rem 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <p>Hello, Welcome</p>
+    </header>
+
+    <section class="hero">
+        <img src="./image.png" alt="Profile" class="profile-image">
+        <h1>I'm NARENDRA KUMAR THAKUR</h1>
+        <p>Development Officer at LIC of India</p>
+        <div class="button-container">
+            <a href="#" class="btn btn-primary" onclick="joinUs()">Contact Us</a>
+            <a href="../registration/register.html" class="btn btn-secondary" >Join Us</a>
+        </div>
+    </section>
+
+    <section class="white-section">
+        <h2 class="section-title">About Me</h2>
+        <div class="card">
+            <p>I am a Development Officer at LIC of India, proudly serving since March 2009. With over 15 years of experience in the insurance and financial sector, I have developed expertise in empowering individuals to achieve their personal and professional aspirations.</p>
+            <p>My academic background includes a Bachelor's degree in Economics (Honours) and ongoing pursuit of an MBA in Marketing and Finance, allowing me to blend analytical thinking with strategic planning. As a mentor and guide, I currently lead a team of over 100 professional advisors, helping them realize their full potential and deliver exceptional service to clients.</p>
+        </div>
+    </section>
+
+    <section class="blue-section">
+        <h2 class="section-title">What I Offer</h2>
+        <div class="cards-container">
+            <div class="card">
+                <h3>Career Opportunities</h3>
+                <ul>
+                    <li>Fulfilling career in life insurance sector</li>
+                    <li>Flexible work environment</li>
+                    <li>Comprehensive training programs</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Professional Growth</h3>
+                <ul>
+                    <li>Strategic guidance for advisors</li>
+                    <li>Leadership opportunities</li>
+                    <li>Growth-oriented culture</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Financial Solutions</h3>
+                <ul>
+                    <li>Personalized guidance</li>
+                    <li>Client-first approach</li>
+                    <li>Long-term value creation</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="white-section">
+        <h2 class="section-title">Why Join My Team?</h2>
+        <ul class="benefits-list">
+            <li>Benefit from 15 years of experience in the financial industry</li>
+            <li>Be part of a dynamic network of 100+ successful advisors</li>
+            <li>Enjoy personalized mentorship tailored to your growth needs</li>
+            <li>Access exclusive opportunities for learning and development</li>
+        </ul>
+    </section>
+
+    <section class="cta-section">
+        <h2 class="section-title">Work with Me</h2>
+        <p>If you are passionate about building a rewarding career and creating an impact through financial planning and client-centric solutions, you've come to the right place!</p>
+        <p>Whether you are seeking career guidance, an experienced professional looking for new challenges, or someone eager to make a difference, I invite you to join my team of dedicated advisors at LIC.</p>
+        <div class="button-container">
+            <a href="../registration/register.html" class="btn btn-primary">Join Our Team</a>
+            <a href="#" class="btn btn-secondary">Learn More</a>
+        </div>
+    </section>
+
+    <script>
+        function joinUs() {
+            window.location.href="https://wa.me/+919315697370"
+        }
+    </script>
+</body>
+</html>
