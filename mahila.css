@@ -74,6 +74,29 @@ section {
 
 }
 
+.btn {
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: transform 0.3s ease;
+    
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.btn-primary {
+    background-color: #fbbf24;
+    color: #1e3a8a;
+}
+
+.mk{
+    margin-top: 2rem;
+}
+
 .register-btn-container{
     display: flex;
     justify-content: center;

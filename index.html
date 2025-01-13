@@ -6,7 +6,8 @@
     <title>Company Landing Page</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
 </head>
 <body>
     <header>
@@ -17,6 +18,7 @@
                 <li><a href="#home">Home </a></li>
                 <li><a href="mahila.html">LIC Mahila Career Agent</a></li>
                 <li><a href="registration/register.html">Register</a></li>
+                <li><a href="about_me/about.html">About Me</a></li>
             </ul>
         </nav>
     </header>
@@ -25,7 +27,7 @@
         <section class="owner-section" id="home">
             
             <div class="owner-description">
-                <h2 style="text-align: start;">Start Your Own Business with ACE LIC Advisor</h2>
+                <h2 style="text-align: start; color: #0066cc;">Start Your Own Business with ACE LIC Advisor</h2>
                 <p>Become an ACE LIC Advisor and build your own successful business with minimal investment.
                     Enjoy the benefits of being your own boss and creating a flexible schedule that suits your lifestyle.
                     Receive comprehensive training and ongoing support to help you succeed.
@@ -34,19 +36,27 @@
                 <button class="join-button" onclick="joinUs()"><div class="button-div">Join Us<img class="wa-icon" src="assets/whatsapp.png" alt="wa-icon"></div></button>
             </div>
 
-            <div class="owner-image"><img src="assets/ownerimg.png" alt="owner-img"></div>
+            <div class="owner-image"><img src="assets/m-removebg-preview.png" class="guy" alt="owner-img">
+                
+            </div>
+            
         </section>
+        <img src="assets/licimage.jpeg" class="licimage">
 
         <section class="whyjoin-section">
             <h1 class="heading">WHY JOIN US AS LIC AGENT</h1>
-            <p class="whyjoin-description">
-                Life Insurance Corporation of India (LIC), the largest financial institution in India, is expanding its marketing team by recruiting agents, who are the backbone of LIC’s success. Becoming an LIC agent is a highly rewarding career, offering unlimited earning potential, flexible working hours, and opportunities for career growth. 
+            
+            
+                <p class="whyjoin-description"> <span style="display:block; padding-bottom: 10px;;">Why Join My Team?</span> 
+
+                    Benefit from 15 years of experience in the financial industry.
+                    Be part of a dynamic network of 100+ successful advisors.
+                    Enjoy personalized mentorship tailored to your growth needs.
+                    Access exclusive opportunities for learning, development, and career progression.
+                    </p>
+                <p class="whyjoin-description"><span style="display:block; padding-bottom: 10px;">Work with Me</span>
+                    If you are passionate about building a rewarding career and creating an impact through financial planning and client-centric solutions, you’ve come to the right place!</p>
                 
-                </p>
-                
-                <p class="whyjoin-description">Many LIC agents have transformed their lives in terms of income, recognition, and career advancement, with some earning crores annually. </p>
-                <p class="whyjoin-description">LIC also provides promotion opportunities, allowing agents to rise to positions such as Development Officer, ABM, BM, or DM. The process of becoming an agent is affordable, requiring only minimal registration, training, and exam fees.  </p>
-                <p class="whyjoin-description">Both men and women can apply, provided they are at least 18 years old and have completed 10th grade. LIC agents help people with financial and insurance solutions, including retirement planning, education funding, tax-saving, and family financial security. Operating since 1959, LIC continues to grow, with only 20% of India’s population currently insured, highlighting the immense potential in this sector. Joining LIC as an agent is not just a job but an opportunity to achieve financial independence and a fulfilling career.</p>
         
         
             </section>
@@ -110,7 +120,7 @@
                   <blockquote>
                     <p>I've had the pleasure of working under Narendra sir's leadership, and their strategic vision and expertise have been invaluable.</p>
                   </blockquote>
-                  <h3>Satender Singh</h3>
+                  <h3>Sunil Kumar Rana</h3>
                   
                 </figcaption>
               </figure>
@@ -118,9 +128,22 @@
 
     </main>
 
+
+
     <footer>
-        <p>&copy; 2025 Company Name. All rights reserved.</p>
-    </footer>
+        <div class="footer-container">
+          <h2>Connect with me</h2>
+          <div class="social-links">
+            <a href="https://www.facebook.com/narendra.thakur.7545?mibextid=ZbWKwL" target="_blank" class="social-icon facebook">
+              <img src="assets/facebook1.png"></img>
+            </a>
+            <a href="https://www.instagram.com/narendrathakur854?utm_source=qr&igsh=MWc2eGM4ZXZ6Y2hqZg==" target="_blank" class="social-icon twitter">
+                <img src="assets/instagram.png"></img>
+            </a>
+            
+          </div>
+        </div>
+      </footer>
 
     <script>
         function joinUs() {
