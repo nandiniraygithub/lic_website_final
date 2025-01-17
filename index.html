@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
+    
 </head>
 <body>
     <header>
@@ -145,10 +146,44 @@
         </div>
       </footer>
 
+      <div id="popup-container-main">
+        <div id="popup-container" class="overlay">
+            <div class="popup">
+              <button class="close-btn" id="close-popup">X</button>
+              <img src="assets/licimage.jpeg" alt="LIC Logo">
+              <h2>Join LIC as Agent / Insurance Advisor</h2>
+              <p>Work Part / Full Time</p>
+              <p>Offer Handsome Commissions and More...</p>
+              <hr style="border: 1px solid #ff9800; margin: 10px 0;">
+              <p>FOR CONTACT</p>
+              <h3>Narendra Kumar Thakur</h3>
+              <p>(Recruiter)</p>
+              <p>MOB: 93156 97370</p>
+              <p>EMAIL: narendrathakur1694@gmail.com</p>
+              <hr style="border: 1px solid #ff9800; margin: 10px 0;">
+             
+               <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="text" placeholder="Enter your name" name="name">
+                <input type="tel" placeholder="Enter 10 digit mobile number" name="number">
+                <input type="hidden" name="access_key" value="4a1b1a78-ae05-453d-a7db-e0cbde938b8e">
+                <button type="submit">SEND</button>
+                </form>
+            </div>
+          </div>
+      </div>
+    
+
     <script>
-        function joinUs() {
-            window.location.href="https://wa.me/+919315697370"
-        }
-    </script>
+        // Show modal after 30 seconds
+        setTimeout(() => {
+          document.getElementById('popup-container').style.display = 'flex';
+        }, 30000);
+    
+        document.getElementById('close-popup').addEventListener('click',()=>{
+            document.getElementById('popup-container').style.display = 'none'
+        })
+      
+      </script>
+    
 </body>
 </html>
