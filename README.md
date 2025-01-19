@@ -28,11 +28,7 @@ Check out the live demo of the website:
 
 ## Screenshots  
 > *![image](https://github.com/user-attachments/assets/3886d966-f689-426b-af81-d86200d2fd69)
-*  
 
-## Future Enhancements  
-- Add dynamic backend integration to store user registrations in a database.  
-- Implement email notifications for successful registrations.  
 
 
 
