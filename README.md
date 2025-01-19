@@ -1,7 +1,7 @@
-# LIC Development Office Website  
+# Join As Lic Agent 
 
 ## Overview  
-This project is a **static website** developed for an **LIC Development Office**. It enables users to register online if they are interested in becoming LIC agents. The website is built using **HTML**, **CSS**, and **JavaScript** to provide a responsive, clean, and user-friendly interface.  
+This project is a **static website** developed for an **LIC Development Officer**. It enables users to register online if they are interested in becoming LIC agents. The website is built using **HTML**, **CSS**, and **JavaScript** to provide a responsive, clean, and user-friendly interface.  
 
 ## Features  
 - **User Registration**: A simple form for users to submit their details to express interest in becoming an LIC agent.  
@@ -15,7 +15,7 @@ This project is a **static website** developed for an **LIC Development Office**
 
 ## Demo  
 Check out the live demo of the website:  
-[**Live Demo**](#) *(Replace with the actual link to your live website)*  
+[**Live Demo**](https://joinaslicagent.com/) 
 
 ## How It Works  
 1. Users visit the website and access the registration form.  
@@ -27,17 +27,12 @@ Check out the live demo of the website:
 - Focus on usability and a straightforward user experience.  
 
 ## Screenshots  
-> *(Add screenshots here to demonstrate the website’s design and functionality.)*  
+> *![image](https://github.com/user-attachments/assets/3886d966-f689-426b-af81-d86200d2fd69)
+*  
 
 ## Future Enhancements  
 - Add dynamic backend integration to store user registrations in a database.  
 - Implement email notifications for successful registrations.  
 
-## Contact  
-For any queries or collaborations, feel free to contact me:  
-- **Email**: [your-email@example.com](mailto:your-email@example.com)  
-- **LinkedIn**: [Your LinkedIn Profile](#)  
 
----  
 
-Feel free to provide the live link or any screenshots, and I’ll refine this further! 😊  
